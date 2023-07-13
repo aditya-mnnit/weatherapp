@@ -1,4 +1,4 @@
-const userTab = document.querySelector("[data-userWeather]");
+const usertab = document.querySelector("[data-userWeather]");
 const searchTab = document.querySelector("[data-searchWeather]");
 const userContainer = document.querySelector(".weather-container");
 
@@ -9,7 +9,7 @@ const userInfoContainer = document.querySelector(".user-info-container");
 
 //initially vairables need????
 
-let oldTab = userTab;
+let oldTab = usertab;
 const API_KEY = "d1845658f92b31c64bd94f06f7188c9c";
 oldTab.classList.add("current-tab");
 getfromSessionStorage();
@@ -37,9 +37,9 @@ function switchTab(newTab) {
     }
 }
 
-userTab.addEventListener("click", () => {
+usertab.addEventListener("click", () => {
     //pass clicked tab as input paramter
-    switchTab(userTab);
+    switchTab(usertab);
 });
 
 searchTab.addEventListener("click", () => {
